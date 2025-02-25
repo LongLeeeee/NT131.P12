@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green2"
+            app:cardCornerRadius="30dp"
+            android:layout_alignParentBottom="true"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:background="@color/green2"
+                android:padding="20dp"
+                app:layout_behavior = "com.google.android.material.bottomsheet.BottomSheetBehavior"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="10dp"
+                        android:background="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/close_popup"
+                        app:cardCornerRadius="5dp"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pothole"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Nov 2024"
+                            android:id="@+id/date_upload"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:layout_alignParentRight="true" />
+
+                        <TextView
+                            android:id="@+id/id_pothole_popup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="-1dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="672770874808986872cf74aa"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="username"
+                            android:id="@+id/username_popup"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true" />
+
+
+
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/my_location_red"
+
+                                />
+                            <TextView
+                                android:fontFamily="@font/montserrat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00000"
+                                android:id="@+id/loacation_popup"
+                                android:textColor="@color/green"
+                                android:textSize="15sp"
+                                android:layout_gravity="center"
+                                />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="10dp">
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+
+                            >
+
+                            <ImageView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/warnning_red_2"
+                                android:id="@+id/icon_popup_bottom"
+                                />
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00000"
+                                android:id="@+id/level_popup"
+                                android:textColor="@color/green"
+                                android:textSize="15sp"
+                                android:layout_gravity="center"
+                                />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </FrameLayout
+                >
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+    
+
+</RelativeLayout>

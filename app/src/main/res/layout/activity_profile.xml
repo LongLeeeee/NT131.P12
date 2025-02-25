@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/back_btn"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="6.5"
+                android:background="@drawable/background_panel">
+
+                <LinearLayout
+                    android:id="@+id/name_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/hint_username"
+                        android:textColor="@color/green2"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/input_container"
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/name_container"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_inputf"
+                            android:paddingVertical="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/username"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:hint="@string/hint_username"
+                                android:fontFamily="@font/montserrat"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/edit_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="15dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:src="@drawable/edit_fill" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/warning1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Please enter your current pasword"
+                            android:textColor="@color/red"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_inputf"
+                            android:paddingVertical="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:enabled="false"
+                                android:hint="@string/hint_email"
+                                android:layout_marginEnd="35dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@null"
+                                android:fontFamily="@font/montserrat"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                            android:id="@+id/edit_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/edit_fill" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/warning2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Please enter your new pasword"
+                            android:textColor="@color/red"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_inputf"
+                            android:paddingVertical="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/date_of_birth"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:enabled="false"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@null"
+                                android:hint="@string/DoB"
+                                android:fontFamily="@font/montserrat"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                            android:id="@+id/edit_date_of_birth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/edit_fill" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/warning3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Please enter your new pasword again"
+                            android:textColor="@color/red"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_inputf"
+                            android:paddingVertical="5dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/phone_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:enabled="false"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@null"
+                                android:hint="@string/phone_number"
+                                android:fontFamily="@font/montserrat"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:paddingHorizontal="15dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="20sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                            android:id="@+id/edit_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/edit_fill" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/warning4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Please enter your new pasword again"
+                            android:textColor="@color/red"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_update_profile"
+                        android:layout_width="330dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/btn_update_profile"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_button"
+                        android:layout_marginBottom="40dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="47dp"
+            android:id="@+id/profile_picture"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:background="@drawable/background_circle"
+            android:contentDescription="Profile Information"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_picture" />
+    </RelativeLayout>
+</FrameLayout>

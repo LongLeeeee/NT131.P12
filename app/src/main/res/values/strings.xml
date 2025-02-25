@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Project_App</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="base_url">https://nt131-p12-pothole.onrender.com/api/</string>
+    <string name="default_web_client_id">396818426889-80pv8ve7jl6qfs5ui75p5n4t5lnis12h.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">4009115116080135</string>
+    <string name="fb_login_protocol_scheme">fb4009115116080135</string>
+    <string name="facebook_client_token">0ba418b9658bdc91a9ac5ad8720d944a</string>
+
+    <!--    Welcome Activity-->
+    <string name="vie_title1_welcome_activity" translatable="false">WELCOME PoLoT</string>
+    <string name="vie_sign_up_button">SIGN UP</string>
+    <string name="vie_sign_in_button">SIGN IN</string>
+    <string name="vie_title2_welcome_activity">Or sign in with</string>
+
+    <!--    Sign up Activity-->
+    <string name="title1_signup_activity">Create Account</string>
+    <string name="title2_signup_activity">Use your email for registration</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="check_box_text">I agree to the Terms and Privacy Policy</string>
+    <string name="username_error">Please enter your username</string>
+    <string name="email_error">Please enter your email address</string>
+    <string name="password_error">Please enter your password</string>
+    <string name="confirm_password_error">Please enter your password again</string>
+
+    <!--    Sign in Activity-->
+    <string name="title1_signin_activity">Welcome Back</string>
+    <string name="title2_signin_activity">Enter your details below</string>
+    <string name="title3_signin_activity">Remember me</string>
+    <string name="title4_signin_activity">Forgot your password?</string>
+    <string name="waring1_sign_in">Please enter your username</string>
+    <string name="waring2_sign_in">Please enter your password</string>
+
+
+    <!--    forgot_password_activity-->
+    <string name="title1_forgot_password">Forgot Password</string>
+    <string name="title2_forgot_password">Enter your email to reset password</string>
+    <string name="countinue_button">Continue</string>
+
+    <!--    verification_activity-->
+    <string name="title1_verification_activity">Verification Code</string>
+    <string name="title2_verification_activity">Please enter the 4-digit code that we sent to your email</string>
+
+    <!-- new_password_activity-->
+    <string name="title1_new_password_acitvity">Reset password</string>
+    <string name="title2_new_password_activity">It must be at least 8 characters long and contain one symbol (!@#$%^*), one number and one uppercase letter.</string>
+    <string name="hint_new_password">New Password</string>
+
+    <!--    Dashboard-->
+    <string name="overview">Overview</string>
+    <string name="hoursOfUse">Hours of use</string>
+    <string name="hours">hours</string>
+    <string name="pothole">Pothole</string>
+    <string name="potholes">potholes</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="distance">Distance</string>
+    <string name="rank">Rank: #1975</string>
+    <string name="title1_dashboard">Most recently</string>
+    <string name="nodata">No data</string>
+    <string name="viewall">View all</string>
+    <string name="title_bottom_sheet">Select display time</string>
+    <string name="thang1">January</string>
+    <string name="thang2">February</string>
+    <string name="thang3">March</string>
+    <string name="thang4">April</string>
+    <string name="thang5">May</string>
+    <string name="thang6">June</string>
+    <string name="thang7">July</string>
+    <string name="thang8">August</string>
+    <string name="thang9">September</string>
+    <string name="thang10">October</string>
+    <string name="thang11">November</string>
+    <string name="thang12">December</string>
+    <string name="chart_close">CLOSE</string>
+    <string name="chart_apply">APPLY</string>
+
+    <!--    Map-->
+    <string name="number_of_pothole_around">Pothole detected nearby!</string>
+
+<!--    Settings-->
+    <string name="title2_setting">General</string>
+    <string name="title1_setting">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="changepass">Change Password</string>
+    <string name="detection">Detection Sensitivity</string>
+    <string name="alert">Alert Preferences</string>
+    <string name="data_sharing">Data Sharing Options</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title3_setting">Option</string>
+
+<!--    Profile-->
+    <string name="DoB">Day of birth</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="btn_update_profile">Update Profile</string>
+
+<!--    Change Password-->
+    <string name="title1_change_pass">Change Password</string>
+    <string name="title2_change_pass">Your password must contain at least\n 8 characters</string>
+    <string name="hint_current_pass">Current Password</string>
+    <string name="hint_new_pass">New Password</string>
+    <string name="btn_change_pass">CHANGE PASSWORD</string>
+
+<!--    Detection sensitivity-->
+    <string name="title1_detection">Detection Sensitivity</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+
+
+    <!--    Alert Preferences-->
+    <string name="title1_alert">Alert Preferences</string>
+    <string name="title2_alert">Notification</string>
+    <string name="title3_alert">Disturb</string>
+    <string name="subtitle1_alert">Allow Alert Preferences</string>
+    <string name="subtitle2_alert">Automatically send notifications when \na pothole is detected</string>
+    <string name="subtitle3_alert">Sounds</string>
+    <string name="subtitle4_alert">Allow Notifications</string>
+    <string name="subtitle5_alert">Automatically send new notifications \nabout messages, contracts and documents.</string>
+    <string name="subtitle6_alert">Badges</string>
+    <string name="subtitle7_alert">Shows a red badge on the app icon when you \nhave unread message</string>
+    <string name="subtitle8_alert">Notifications from this app will be silenced</string>
+
+    <string name="sharing">Sharing with us</string>
+    <string name="sharing_detail">Allow sharing of your data with others. Make sure the device you want to connect to has internet turned on.</string>
+
+<!--    sign out dialog-->
+    <string name="title1_dialog_sign_out">Sign out from PoLoT</string>
+    <string name="title2_dialog_sign_out">Are you sure you would like to \nsign out of your PoLoT account?</string>
+    <string name="btn_close">CLOSE</string>
+    <string name="btn_sign_out">SIGN OUT</string>
+
+
+
+
+</resources>

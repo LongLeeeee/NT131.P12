@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DetailHistory">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/background_header"
+        android:elevation="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/back_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/dateD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="08 October 2024"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="8:25PM"
+                android:textColor="@color/white"
+                android:id="@+id/timeD"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/header">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progressbar_custom"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:id="@+id/part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Pothole ID "
+                android:textColor="@color/green"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="ALGNFLSG"
+                android:textColor="@color/green"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/copy_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/copy">
+            </ImageView>
+        </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pothole_map"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:layout_below="@+id/part1"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                android:background="@drawable/background_detail_history"
+                android:elevation="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <org.mapsforge.map.android.view.MapView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/MapDetail"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat"
+                        android:id="@+id/adressD"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/pothole_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pothole_map"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/background_detail_history">
+            <ImageView
+                android:id="@+id/pothole_image"
+                android:layout_width="330dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1.25"
+                android:background="@drawable/background_choose_photo"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/background_accepted"
+                    android:paddingHorizontal="7dp"
+                    android:textColor="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Accepted"
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Size: "
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:id="@+id/sizeD"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Name: "
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:id="@+id/nameD"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Longitude: "
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:id="@+id/longitudeD"
+                        android:layout_marginEnd="10dp"
+
+                        />
+                    <TextView
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latitude: "
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:id="@+id/latitudeD" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

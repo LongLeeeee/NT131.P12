@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/rounded_corners_alert</item>
+        <item name="android:windowMinWidthMajor">80%</item> <!-- Adjust dialog width on larger screens -->
+        <item name="android:windowMinWidthMinor">80%</item> <!-- Adjust dialog width on smaller screens -->
+        <item name="android:windowBackground">@drawable/rounded_corners_alert</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>
+

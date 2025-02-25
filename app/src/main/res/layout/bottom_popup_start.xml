@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet_start"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green2"
+            app:cardCornerRadius="30dp"
+            android:layout_alignParentBottom="true"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:background="@color/green2"
+                android:padding="20dp"
+                app:layout_behavior = "com.google.android.material.bottomsheet.BottomSheetBehavior"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="10dp"
+                        android:background="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/close_popup_place"
+                        app:cardCornerRadius="5dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Place name"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/place_name_start"
+
+
+                            />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10.882839837460352,106.78359748817628"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/white"
+
+                            android:id="@+id/place_latLong_start"
+
+
+                            />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/distance_time"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12 Km"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:textColor="@color/white"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/disanceToPlaceStart"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 h 20 m"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:id="@+id/timeToPlaceStart"
+
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </FrameLayout
+                >
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+    
+
+</RelativeLayout>

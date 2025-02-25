@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_welcome"
+    tools:context=".WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:id="@+id/language"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/img_language"
+               android:layout_marginRight="5dp"
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               android:src="@drawable/en_lang" />
+           <TextView
+               android:id="@+id/lang_code"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ENG"
+               android:fontFamily="@font/montserrat_extrabold"
+               android:textColor="@color/white"/>
+       </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo_icon" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_below="@id/logo_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="20"
+        android:text="@string/vie_title1_welcome_activity"
+        android:textColor="@color/white"
+        android:textSize="55dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/object"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/object" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progressbar_custom"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/vie_sign_up_button"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_button1"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/vie_sign_in_button"
+            android:textColor="@color/green"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/part2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/part1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="@string/vie_title2_welcome_activity"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp">
+
+            <Button
+                android:id="@+id/gg_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_panel"
+                android:drawableStart="@drawable/gg_icon"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start|center"
+                android:paddingStart="30dp"
+                android:stateListAnimator="@null"
+                android:text="  Google"
+                android:textSize="17sp"
+                />
+            <Button
+                android:id="@+id/fb_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_panel"
+                android:drawableStart="@drawable/fb_icon"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start|center"
+                android:paddingStart="15dp"
+                android:stateListAnimator="@null"
+                android:text="  Facebook"
+                android:textColor="#0866FF"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
